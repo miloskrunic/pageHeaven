@@ -89,7 +89,7 @@ input {
     border-radius: 19px;
     text-align: center;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 .thumbnail {
@@ -120,16 +120,27 @@ input {
         margin-top: 10px;
         display: flex; 
         justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    .left{
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
     }
 
     form {
         width: 80%;
         align-items: center;
     }
+
 }
 
 @media (max-width: 480px) {
     .column {
         flex: 1 1 100%;
     }
+    
 }
