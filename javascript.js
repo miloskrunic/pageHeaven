@@ -48,7 +48,7 @@ function returnBooks(url) {
 
                 // Proveri da li je ova knjiga već u favoritima
                 if (favorites.some(fav => fav.title === title)) {
-                    favoriteBtn.classList.add("active"); // Ako jeste, zvezda će biti zlatna
+                    favoriteBtn.classList.add("active");
                 }
 
                 favoriteBtn.addEventListener("click", function () {
@@ -88,10 +88,10 @@ function toggleFavorite(book, button) {
 
     if (index === -1) {
         favorites.push(book);
-        button.classList.add("active"); // Postavlja zlatnu zvezdu
+        button.classList.add("active");
     } else {
         favorites.splice(index, 1);
-        button.classList.remove("active"); // Vraća sivu zvezdu
+        button.classList.remove("active");
     }
 
     localStorage.setItem("favorites", JSON.stringify(favorites));

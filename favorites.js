@@ -33,13 +33,12 @@ function loadFavorites() {
         const yearElement = document.createElement('p');
         yearElement.textContent = `First Published: ${book.publishYear}`;
 
-        // Dugme za uklanjanje iz favorita
         const removeBtn = document.createElement('button');
         removeBtn.classList.add('favorite-btn');
         removeBtn.innerHTML = '❌';
         removeBtn.addEventListener("click", () => {
             removeFromFavorites(book.title);
-            loadFavorites(); // Ponovo učitaj listu
+            loadFavorites();
         });
 
         div_card.appendChild(image);

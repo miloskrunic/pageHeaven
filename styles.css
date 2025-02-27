@@ -46,7 +46,7 @@ body{
 }
 
 .dropdown a:hover {
-    color: gold; /* Menja boju na hover */
+    color: gold; 
 }
 
 .dropdown a {
@@ -55,7 +55,7 @@ body{
 }
 
 .dropdown a:hover {
-    color: gold; /* Menja boju na hover */
+    color: gold;
 }
 
 .searchContainer{
@@ -79,9 +79,9 @@ input {
 }
 
 input::placeholder {
-    color: #7A594F; /* Promeni boju teksta */
-    opacity: 0.7; /* Možeš smanjiti providnost ako želiš */
-    font-style: italic; /* Opcionalno - doda kos slova */
+    color: #7A594F;
+    opacity: 0.7;
+    font-style: italic;
 }
 
 
@@ -126,9 +126,9 @@ input::placeholder {
 .favorite-btn {
     background: none;
     border: none;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
-    color: gray; /* Početna boja - prazna zvezda */
+    color: gray;
     transition: transform 0.2s, color 0.3s;
 }
 
@@ -137,7 +137,7 @@ input::placeholder {
 }
 
 .favorite-btn.active {
-    color: gold; /* Zvezda postaje zlatna kada je aktivna */
+    color: gold;
 }
 
 
