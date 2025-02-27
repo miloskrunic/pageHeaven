@@ -55,7 +55,6 @@ function returnBooks(url) {
                 favoriteBtn.classList.add('favorite-btn');
                 favoriteBtn.innerHTML = '⭐';
 
-                // Proveri da li je ova knjiga već u favoritima
                 if (favorites.some(fav => fav.title === title)) {
                     favoriteBtn.classList.add("active");
                 }
@@ -92,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
     returnBooks(APILINK + "bestsellers");
 });
 
-// Funkcija za dodavanje i uklanjanje iz favorita
 function toggleFavorite(book, button) {
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
