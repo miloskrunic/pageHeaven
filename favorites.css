@@ -41,51 +41,22 @@ body{
 }
 
 .dropdown{
-    font-size: 2rem;
-    letter-spacing:  0.5rem;
+    font-size: 1.5rem;
+    letter-spacing:  0.3rem;
 }
 
-.dropdown a:hover {
-    color: gold; /* Menja boju na hover */
-}
-
-.dropdown a {
+.left a {
     text-decoration: none;
     color: inherit;
 }
 
-.dropdown a:hover {
-    color: gold; /* Menja boju na hover */
-}
-
-.searchContainer{
-    margin-right: 50px;
+.left a:hover{
+    color: gold;
 }
 
 
-form{
-    display:flex;
-    height: 2rem;
-    width: 300px;
-    border-radius: 11px;
-}
-input {
-    flex: 1;
-    font: 1rem system-ui;
-    height: 100%;
-    width: 100%;
-    padding: 0.5rem;
-    background-color:#FFF0C7;
-}
 
-input::placeholder {
-    color: #7A594F; /* Promeni boju teksta */
-    opacity: 0.7; /* Možeš smanjiti providnost ako želiš */
-    font-style: italic; /* Opcionalno - doda kos slova */
-}
-
-
-#section {
+#favorites-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -128,19 +99,13 @@ input::placeholder {
     border: none;
     font-size: 3rem;
     cursor: pointer;
-    color: gray; /* Početna boja - prazna zvezda */
-    transition: transform 0.2s, color 0.3s;
+    color: gold;
+    transition: transform 0.2s;
 }
 
 .favorite-btn:hover {
     transform: scale(1.2);
 }
-
-.favorite-btn.active {
-    color: gold; /* Zvezda postaje zlatna kada je aktivna */
-}
-
-
 
 
 
