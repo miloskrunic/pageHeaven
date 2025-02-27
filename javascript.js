@@ -1,14 +1,23 @@
 const APILINK = "https://openlibrary.org/search.json?q=";
 const IMG_PATH = "https://covers.openlibrary.org/b/id/";
 
+const loader = document.getElementById("loader");
+console.log(loader); // PROVERA
+
 const main = document.getElementById("section");
 const form = document.getElementById("form");
 const search = document.getElementById("query");
 
+
 function returnBooks(url) {
+    loader.style.display = "block";
+    main.innerHTML = "";
+
+
     fetch(url)
         .then(res => res.json())
         .then(function (data) {
+            loader.style.display = "none";
             main.innerHTML = '';
 
             let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -64,7 +73,10 @@ function returnBooks(url) {
                 main.appendChild(div_column);
             });
         })
-        .catch(error => console.error("Error fetching books:", error));
+        .catch(error => {
+            console.error("Error fetching books:", error);
+            loader.style.display = "none";
+        });        
 }
 
 form.addEventListener("submit", (e) => {
